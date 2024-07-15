@@ -6,40 +6,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Relativelayout
+    <RelativeLayout
        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
+        android:layout_height="wrap_content">
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
 
-            <TextView
-                android:id="@+id/name"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name"
-                android:textFontWeight="1000"
-                android:textColor="#0A4BAB"
-                android:textSize="30dp"
-                android:textStyle="bold"
-                />
-    <Button
-        android:id="@+id/delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Delete"
-        android:layout_alignParentEnd="true"
-        android:padding="10dp"
-        android:textFontWeight="1000"
-        android:textColor="#FF9800"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_alignParentRight="true"
-        />
+                android:padding="10dp">
 
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="#0A4BAB"
+                    android:textFontWeight="1000"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
 
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:text="Delete"
+                    android:textColor="#FF9800"
+                    android:textFontWeight="1000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+   </androidx.cardview.widget.CardView>
         </RelativeLayout>
-
-    </RelativeLayout>
+</RelativeLayout>
